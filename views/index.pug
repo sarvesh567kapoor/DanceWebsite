@@ -1,0 +1,106 @@
+doctype html
+html
+  head
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+    title Task Force Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+      ul.nav
+        
+
+        div#logo 
+          img(src="/static/img/logo.png")
+          | TFDA 
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li#we #[a(href="/") Class Info]
+          ul.dropdown  
+            li #[a(href="/") Hip hop class]
+            li #[a(href="/") Hip hop class]
+            li #[a(href="/") Hip hop class]
+
+        li #[a(href="/") Contact Us] 
+
+    section#introSection1 
+      div#text1 Task Force Dance Academy
+      div#text1.small Live Learn Dance 
+    
+    section#missionSection2 
+      h2  Our Mission
+      div.cardparent
+       div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src='../static/img/dance1.png')
+          div.card-content
+            p Lorem ipsum dolor sit amet.
+       div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src='../static//img/dance2.png')
+          div.card-content 
+            p Lorem ipsum dolor sit amet.
+       div.card
+        h3 Experts for all style of Dance
+        div.card-box
+          div.card-img
+            img(src='../static//img/dance3.png')
+          div.card-content   
+            p Lorem ipsum dolor sit amet.
+    
+    section#introSection2 
+      h2  Our Sponsors
+      div#sponsers 
+        img(src="../static/img/jio-1.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/apple.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/skype.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/swiggy.jpg", alt="sponser image" , class="spImage") 
+      
+    section.work
+      h2.hero  Our Work 
+      .container
+        .img-container-grid
+                    .smallsquare
+                      img.img-grid-c(src='https://cdn.pixabay.com/photo/2018/05/28/22/11/message-in-a-bottle-3437294__340.jpg')
+                    .smallsquare
+                      img.img-grid-c(src='https://media.istockphoto.com/photos/view-of-sydney-harbour-australia-picture-id535455441?k=6&m=535455441&s=612x612&w=0&h=jVkW0bOqvffn2SzvUdncgkwHGScJRzak0oaQGij__h8=')
+                    .h_rectangle
+                      img.img-grid-c(src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+                    .smallsquare
+                      img.img-grid-c(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WnzXzbr2hiB8lPq3n_p5fnQdvOMc3Ouummyk11uVylX-7rtdXA')
+                    .bigsquare
+                      img.img-grid-c(src='https://thumbs-prod.si-cdn.com/N-_fU5xNOvR2T25teuPAdtGkBhY=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/90/b2/90b2dfe5-a9ab-4821-9ccc-45ae1d52fa8a/blackholewithclouds_c-1-941x519.jpg')
+                    .bigsquare_blank
+                        .inner_square
+                            img.img-grid-c(src='https://www.w3schools.com/w3css/img_lights.jpg')
+                        .inner_square
+                            img.img-grid-c(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-oo8-jn28YVesncpNZ4cBHocvHtKLwzmpVDbq1k7KNa5jEiL')
+                        .inner_square
+                            img.img-grid-c(src='https://media.cntraveller.in/wp-content/uploads/2018/10/GettyImages-990972132-866x487.jpg')
+                        .inner_square
+                            img.img-grid-c(src='https://www.w3schools.com/howto/img_snow.jpg')
+                    .v_rectangle
+                       img.img-grid-c(src='https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')
+    
+    footer#footer1
+      | Task Force Dance Accademy © 2021  
+     
+      div.social-links
+        <a href="https://twitter.com/" class="icon-twitter" title="@designshack on Twitter"><ion-icon name="logo-instagram"></ion-icon><span>Twitter</span></a>
+        <a href="https://facebook.com/" class="icon-facebook" title="Facebook"><ion-icon name="logo-facebook"></ion-icon><span>Facebook</span></a>
+        <a href="https://www.pinterest.com/" title="Pinterest" class="icon-pinterest"><ion-icon name="logo-pinterest"></ion-icon><span>Pinterest</span></a>
+        <a href="http://feedpress.me/" title="RSS Feed" class="icon-rss"><ion-icon name="logo-rss"></ion-icon><span>RSS Feed</span></a>
+
+    
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  

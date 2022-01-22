@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+    script(src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+
+block content
+    div.container2
+        h2 Please Fill Up The Contact Form
+        form(action="/contact", method="post", class="myForm")
+            input(type="text",class="myInput", name="firstname",placeholder="Enter Your First Name")
+            input(type="text",class="myInput", name="lastname",placeholder="Enter Your Last Name")
+            input(type="phone",class="myInput", name="phone",placeholder="Enter Your Phone Number")
+            input(type="email",class="myInput", name="email",placeholder="Enter Your email address")
+            input(type="text",class="myInput", name="address",placeholder="Enter Your Address")
+
+            button(class="btn")
+                | Submit
+

@@ -1,0 +1,76 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+    script(src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+    section#introSection1 
+      div#text1 Task Force Dance Academy
+      div#text1.small Live Learn Dance 
+    
+    section#missionSection2 
+      h2  Our Mission
+      div.cardparent
+       div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src='../static/img/dance1.png')
+          div.card-content
+            p Lorem ipsum dolor sit amet.
+       div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src='../static/img/dance2.png')
+          div.card-content 
+            p Lorem ipsum dolor sit amet.
+       div.card
+        h3 Experts for all style of Dance
+        div.card-box
+          div.card-img
+            img(src='../static//img/dance3.png')
+          div.card-content   
+            p Lorem ipsum dolor sit amet.
+    
+    section#introSection2 
+      h2  Our Sponsors
+      div#sponsers 
+        img(src="../static/img/jio-1.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/apple.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/skype.jpg", alt="sponser image" , class="spImage")
+        img(src="../static/img/swiggy.jpg", alt="sponser image" , class="spImage") 
+      
+    section.work
+      h2.hero  Our Work 
+      .container
+        .img-container-grid
+                    .smallsquare
+                      img.img-grid-c(src='https://cdn.pixabay.com/photo/2018/05/28/22/11/message-in-a-bottle-3437294__340.jpg')
+                    .smallsquare
+                      img.img-grid-c(src='https://media.istockphoto.com/photos/view-of-sydney-harbour-australia-picture-id535455441?k=6&m=535455441&s=612x612&w=0&h=jVkW0bOqvffn2SzvUdncgkwHGScJRzak0oaQGij__h8=')
+                    .h_rectangle
+                      img.img-grid-c(src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+                    .smallsquare
+                      img.img-grid-c(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WnzXzbr2hiB8lPq3n_p5fnQdvOMc3Ouummyk11uVylX-7rtdXA')
+                    .bigsquare
+                      img.img-grid-c(src='https://thumbs-prod.si-cdn.com/N-_fU5xNOvR2T25teuPAdtGkBhY=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/90/b2/90b2dfe5-a9ab-4821-9ccc-45ae1d52fa8a/blackholewithclouds_c-1-941x519.jpg')
+                    .bigsquare_blank
+                        .inner_square
+                            img.img-grid-c(src='https://www.w3schools.com/w3css/img_lights.jpg')
+                        .inner_square
+                            img.img-grid-c(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-oo8-jn28YVesncpNZ4cBHocvHtKLwzmpVDbq1k7KNa5jEiL')
+                        .inner_square
+                            img.img-grid-c(src='https://media.cntraveller.in/wp-content/uploads/2018/10/GettyImages-990972132-866x487.jpg')
+                        .inner_square
+                            img.img-grid-c(src='https://www.w3schools.com/howto/img_snow.jpg')
+                    .v_rectangle
+                       img.img-grid-c(src='https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')
+    
